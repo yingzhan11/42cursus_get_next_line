@@ -1,0 +1,8 @@
+this is the
+test 1
+     for get_next_line  
+function    there are
+  many lines in
+
+
+this  file]
