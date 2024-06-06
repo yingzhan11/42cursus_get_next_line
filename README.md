@@ -8,7 +8,9 @@ I also upload the linked list version, may know how to fix it in the future.
 # IMPORTANT!
 1.**Check memory leak!!! Everywhere!!!**
 
-2.for Bonus part, check fd, the max is OPEN_MAX
+2.Use ssize_t for the return value of read function, not size_t, because the error value is -1.
+
+3.for Bonus part, check fd, the max is OPEN_MAX
 
 # Useful Links
 **fd** https://www.codequoi.com/en/handling-a-file-by-its-descriptor-in-c/
