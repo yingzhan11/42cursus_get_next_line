@@ -49,7 +49,7 @@ int	main(int ac, char **av)
 	    while (line[n])
 	    {
 	    	printf("line %d -> %s", i++, line[n]);
-			free(line);
+			//free(line);
 	    	line[n] = get_next_line(STDIN_FILENO);
 	    }
     }
@@ -84,7 +84,7 @@ int	main(int ac, char **av)
 				else
 				{
 					printf("fd %d: line %d -> %s", fd[i], nb_line[i]++, line[i]);
-					free(line);
+					//free(line);
 					line[i] = get_next_line(fd[i]);
 				}
 				i++;
@@ -92,7 +92,7 @@ int	main(int ac, char **av)
 		}
 	}
 	printf("-----TEST END-----\n");
-	if (*line)
-		free(line);
+	//if (*line)
+		//free(line);
 	return (0);
 }
