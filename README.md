@@ -23,3 +23,6 @@ I also upload the linked list version, may know how to fix it in the future.
 
 **get_next_line tutorial** https://www.youtube.com/watch?v=8E9siq7apUU&t=1s
 _This tutorial use linked list, so it would have memory leak, but the logical is same with using a static variable_
+
+# ps.
+command to check memory leak: `Leaks --atExit -- ./a.out`
