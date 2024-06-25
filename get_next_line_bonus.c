@@ -81,7 +81,7 @@ static char	*ft_to_nextline(char *read_buf)
 
 char	*get_next_line(int fd)
 {
-	static char	*read_buf[OPEN_MAX];
+	static char	*read_buf[OPEN_MAX]; //OPEN_MAX is used in macOS, if move to Linux, it shoud be FOPEN_MAX in <stdio.h>
 	char		*oneline;
 
 	if (BUFFER_SIZE <= 0 || fd < 0 || fd > OPEN_MAX)
